@@ -1,73 +1,199 @@
-# Welcome to your Lovable project
+# FIEL.IA - O Assistente IA de todo Corinthiano ⚽
 
-## Project info
+## Sobre o Projeto
 
-**URL**: https://lovable.dev/projects/7d10ff09-6498-4606-875e-b720dfc72dec
+**FIEL.IA** é uma plataforma SaaS (Software as a Service) completa, desenvolvida como um assistente de inteligência artificial especializado no Sport Club Corinthians Paulista. A plataforma oferece funcionalidades de chat interativo, quiz gamificado, notícias e comunidade para conectar a Fiel Torcida através da tecnologia.
 
-## How can I edit this code?
+## ✨ Funcionalidades
 
-There are several ways of editing your application.
+### 🤖 FielChat
+- Conversa com IA especializada em Corinthians
+- Base de conhecimento sobre história, estatísticas e curiosidades
+- Respostas contextualizadas e personalizadas
 
-**Use Lovable**
+### 🏆 Quiz Diário
+- Perguntas desafiadoras sobre o Timão
+- Sistema de pontuação gamificado
+- Ranking competitivo entre usuários
+- Conquistas e recompensas
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/7d10ff09-6498-4606-875e-b720dfc72dec) and start prompting.
+### 📰 Central de Notícias
+- Curadoria inteligente de notícias
+- Atualizações em tempo real
+- Filtros personalizáveis por categoria
 
-Changes made via Lovable will be committed automatically to this repo.
+### 👥 Comunidade Fiel
+- Conexão entre torcedores
+- Discussões e debates
+- Compartilhamento de conteúdo
 
-**Use your preferred IDE**
+## 🎨 Design System
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+### Paleta de Cores (Corinthians)
+- **Primária**: Preto absoluto (#000000)
+- **Secundária**: Branco (#FFFFFF)  
+- **Accent**: Dourado (#FFD700)
+- **Background**: #121212
+- **Content**: #1C1C1C
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+### Princípios de Design
+- **Mobile-First**: Otimizado para dispositivos móveis
+- **Acessibilidade**: Seguindo diretrizes WCAG
+- **Performance**: Core Web Vitals otimizados
+- **Consistência**: Sistema de componentes reutilizáveis
 
-Follow these steps:
+## 🛠️ Stack Tecnológica
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+### Frontend
+- **React.js 18+** com TypeScript
+- **Tailwind CSS** para estilização
+- **Radix UI** para componentes headless
+- **Framer Motion** para animações
+- **React Hook Form + Zod** para formulários
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+### Backend (Futuro - Supabase)
+- **Supabase** como Backend as a Service
+- **PostgreSQL** como banco de dados
+- **Supabase Auth** para autenticação
+- **Edge Functions** para lógica backend
+- **Supabase Storage** para arquivos
 
-# Step 3: Install the necessary dependencies.
-npm i
+### Outras Tecnologias
+- **Lucide React** para ícones
+- **Recharts** para gráficos
+- **React Router DOM** para navegação
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
+## 🚀 Como Executar
+
+### Pré-requisitos
+- Node.js 18+ e npm instalados
+- Git para versionamento
+
+### Instalação
+```bash
+# Clone o repositório
+git clone <URL_DO_REPOSITORIO>
+
+# Entre no diretório
+cd fiel-ia
+
+# Instale as dependências
+npm install
+
+# Execute o projeto
 npm run dev
 ```
 
-**Edit a file directly in GitHub**
+### Scripts Disponíveis
+- `npm run dev` - Inicia o servidor de desenvolvimento
+- `npm run build` - Gera build de produção
+- `npm run preview` - Visualiza build de produção localmente
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+## 📱 Páginas Implementadas
 
-**Use GitHub Codespaces**
+### ✅ Fase 1 - MVP (Implementado)
+- [x] **Landing Page** (`/`) - Página inicial com proposta de valor
+- [x] **Cadastro** (`/cadastro`) - Registro de novos usuários
+- [x] **Login** (`/login`) - Autenticação de usuários
+- [x] **Dashboard** (`/dashboard`) - Painel principal do usuário
+- [x] **404** (`*`) - Página de erro personalizada
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+### 🔄 Fase 2 - Engajamento (Planejado)
+- [ ] **FielChat** (`/chat`) - Interface de conversação com IA
+- [ ] **Quiz** (`/quiz`) - Sistema de perguntas e respostas
+- [ ] **Ranking** (`/ranking`) - Leaderboard dos usuários
+- [ ] **Perfil** (`/perfil`) - Configurações do usuário
 
-## What technologies are used for this project?
+### 🔮 Fase 3 - Monetização (Futuro)
+- [ ] **Planos** (`/planos`) - Assinaturas e pagamentos
+- [ ] **Admin** (`/admin`) - Painel administrativo
+- [ ] **Comunidade** (`/comunidade`) - Fórum de discussões
 
-This project is built with:
+## 🧩 Componentes Criados
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+### Sistema de UI Personalizado
+- `FielButton` - Botões com variantes do design system
+- `FielCard` - Cards para layout de conteúdo
+- `FielInput` - Campos de entrada com validação visual
+- `Header` - Cabeçalho principal da aplicação
+- `Footer` - Rodapé com links e informações
 
-## How can I deploy this project?
+### Seções Reutilizáveis
+- `HeroSection` - Seção hero da landing page
+- `FeaturesSection` - Showcase de funcionalidades
 
-Simply open [Lovable](https://lovable.dev/projects/7d10ff09-6498-4606-875e-b720dfc72dec) and click on Share -> Publish.
+## 🎯 Próximos Passos
 
-## Can I connect a custom domain to my Lovable project?
+### Integração Backend
+1. **Configurar Supabase**
+   - Criar projeto no Supabase
+   - Configurar variáveis de ambiente
+   - Implementar autenticação
 
-Yes, you can!
+2. **Banco de Dados**
+   - Criar tabelas conforme schema SQL definido
+   - Configurar Row Level Security (RLS)
+   - Implementar políticas de acesso
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+3. **Edge Functions**
+   - `submit-quiz-answer` - Processamento de respostas
+   - `get-chat-response` - Lógica do chatbot
+   - `webhook-stripe` - Integração de pagamentos
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+### Novas Funcionalidades
+1. **Sistema de Chat**
+   - Interface de conversação
+   - Histórico de mensagens
+   - Simulação de IA respondendo
+
+2. **Quiz Gamificado**
+   - Banco de perguntas
+   - Sistema de pontuação
+   - Ranking global e semanal
+
+## 📋 Arquitetura de Dados (Planejado)
+
+### Tabelas Principais
+```sql
+-- Perfis de usuário
+profiles (id, full_name, whatsapp, avatar_url, points, current_plan)
+
+-- Perguntas do quiz
+quiz_questions (id, question_text, options, correct_option_index, image_url)
+
+-- Tentativas de quiz
+quiz_attempts (id, user_id, score, completed_at)
+
+-- Histórico de chat
+chat_history (id, user_id, message_content, sender, created_at)
+```
+
+## 🤝 Contribuição
+
+Este projeto foi desenvolvido seguindo as especificações técnicas rigorosas do documento de arquitetura FIEL.IA. 
+
+### Padrões de Código
+- TypeScript para type safety
+- Componentes funcionais com hooks
+- Design system consistente
+- Acessibilidade como prioridade
+
+### Estrutura de Pastas
+```
+src/
+├── components/
+│   ├── ui/           # Componentes base reutilizáveis
+│   ├── layout/       # Componentes de layout
+│   └── sections/     # Seções específicas
+├── pages/            # Páginas da aplicação
+├── lib/              # Utilitários e configurações
+└── assets/           # Imagens e recursos estáticos
+```
+
+## 📞 Suporte
+
+Para dúvidas técnicas ou sugestões sobre o projeto FIEL.IA, consulte a documentação ou entre em contato com a equipe de desenvolvimento.
+
+---
+
+**FIEL.IA** - Conectando a Fiel Torcida através da tecnologia ⚫⚪🟡

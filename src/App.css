@@ -1,42 +1,64 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+/* FIEL.IA - Estilos globais específicos da aplicação */
+
+/* Suavização de fontes */
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+/* Scrollbar personalizado */
+::-webkit-scrollbar {
+  width: 8px;
 }
 
-@keyframes logo-spin {
+::-webkit-scrollbar-track {
+  background: hsl(var(--content));
+}
+
+::-webkit-scrollbar-thumb {
+  background: hsl(var(--neutral-border));
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: hsl(var(--accent) / 0.7);
+}
+
+/* Seleção de texto */
+::selection {
+  background: hsl(var(--accent) / 0.3);
+  color: hsl(var(--neutral-text-primary));
+}
+
+/* Foco personalizado para acessibilidade */
+.focus-ring {
+  @apply focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2 focus-visible:ring-offset-background;
+}
+
+/* Classes utilitárias FIEL.IA */
+.fiel-gradient-text {
+  background: linear-gradient(135deg, hsl(var(--accent)), hsl(var(--secondary)));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.fiel-gradient-bg {
+  background: linear-gradient(135deg, hsl(var(--accent) / 0.1), hsl(var(--accent) / 0.05));
+}
+
+/* Animações suaves */
+.animate-fade-in {
+  animation: fadeIn 0.3s ease-out;
+}
+
+@keyframes fadeIn {
   from {
-    transform: rotate(0deg);
+    opacity: 0;
+    transform: translateY(10px);
   }
   to {
-    transform: rotate(360deg);
+    opacity: 1;
+    transform: translateY(0);
   }
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
-}
-
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
 }

@@ -2,95 +2,72 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
-All colors MUST be HSL.
+/* FIEL.IA Design System - Paleta Corinthians
+Todas as cores em HSL seguindo as especificações do documento
 */
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
-
-    --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
-
-    --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
-
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
-
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
-
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
-
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
-
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
-
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
-
+    /* Paleta Principal FIEL.IA */
+    --primary: 0 0% 0%;          /* Preto absoluto */
+    --secondary: 0 0% 100%;      /* Branco */
+    --accent: 51 100% 50%;       /* Dourado #FFD700 */
+    
+    /* Tons de Fundo */
+    --background: 0 0% 7%;       /* #121212 - Fundo principal */
+    --content: 0 0% 11%;         /* #1C1C1C - Cards e elementos elevados */
+    
+    /* Neutros */
+    --neutral-border: 0 0% 20%;     /* #333333 */
+    --neutral-text-primary: 0 0% 94%; /* #F0F0F0 */
+    --neutral-text-secondary: 0 0% 53%; /* #888888 */
+    
+    /* Estados do Sistema */
+    --success: 134 61% 41%;      /* #28A745 */
+    --warning: 45 100% 51%;      /* #FFC107 */
+    --danger: 354 70% 54%;       /* #DC3545 */
+    
+    /* Compatibilidade shadcn */
+    --foreground: 0 0% 94%;      /* neutral-text-primary */
+    --card: 0 0% 11%;            /* content */
+    --card-foreground: 0 0% 94%; /* neutral-text-primary */
+    --popover: 0 0% 11%;         /* content */
+    --popover-foreground: 0 0% 94%; /* neutral-text-primary */
+    --muted: 0 0% 15%;           /* Mais claro que content */
+    --muted-foreground: 0 0% 53%; /* neutral-text-secondary */
+    --border: 0 0% 20%;          /* neutral-border */
+    --input: 0 0% 20%;           /* neutral-border */
+    --ring: 51 100% 50%;         /* accent */
+    --destructive: 354 70% 54%;  /* danger */
+    --destructive-foreground: 0 0% 94%; /* neutral-text-primary */
     --radius: 0.5rem;
-
-    --sidebar-background: 0 0% 98%;
-
-    --sidebar-foreground: 240 5.3% 26.1%;
-
-    --sidebar-primary: 240 5.9% 10%;
-
-    --sidebar-primary-foreground: 0 0% 98%;
-
-    --sidebar-accent: 240 4.8% 95.9%;
-
-    --sidebar-accent-foreground: 240 5.9% 10%;
-
-    --sidebar-border: 220 13% 91%;
-
-    --sidebar-ring: 217.2 91.2% 59.8%;
   }
 
   .dark {
-    --background: 222.2 84% 4.9%;
-    --foreground: 210 40% 98%;
-
-    --card: 222.2 84% 4.9%;
-    --card-foreground: 210 40% 98%;
-
-    --popover: 222.2 84% 4.9%;
-    --popover-foreground: 210 40% 98%;
-
-    --primary: 210 40% 98%;
-    --primary-foreground: 222.2 47.4% 11.2%;
-
-    --secondary: 217.2 32.6% 17.5%;
-    --secondary-foreground: 210 40% 98%;
-
-    --muted: 217.2 32.6% 17.5%;
-    --muted-foreground: 215 20.2% 65.1%;
-
-    --accent: 217.2 32.6% 17.5%;
-    --accent-foreground: 210 40% 98%;
-
-    --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 210 40% 98%;
-
-    --border: 217.2 32.6% 17.5%;
-    --input: 217.2 32.6% 17.5%;
-    --ring: 212.7 26.8% 83.9%;
-    --sidebar-background: 240 5.9% 10%;
-    --sidebar-foreground: 240 4.8% 95.9%;
-    --sidebar-primary: 224.3 76.3% 48%;
-    --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 240 3.7% 15.9%;
-    --sidebar-accent-foreground: 240 4.8% 95.9%;
-    --sidebar-border: 240 3.7% 15.9%;
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    /* No modo escuro, mantemos as mesmas cores pois já são otimizadas para dark */
+    --primary: 0 0% 0%;
+    --secondary: 0 0% 100%;
+    --accent: 51 100% 50%;
+    --background: 0 0% 7%;
+    --content: 0 0% 11%;
+    --neutral-border: 0 0% 20%;
+    --neutral-text-primary: 0 0% 94%;
+    --neutral-text-secondary: 0 0% 53%;
+    --success: 134 61% 41%;
+    --warning: 45 100% 51%;
+    --danger: 354 70% 54%;
+    --foreground: 0 0% 94%;
+    --card: 0 0% 11%;
+    --card-foreground: 0 0% 94%;
+    --popover: 0 0% 11%;
+    --popover-foreground: 0 0% 94%;
+    --muted: 0 0% 15%;
+    --muted-foreground: 0 0% 53%;
+    --border: 0 0% 20%;
+    --input: 0 0% 20%;
+    --ring: 51 100% 50%;
+    --destructive: 354 70% 54%;
+    --destructive-foreground: 0 0% 94%;
   }
 }
 
