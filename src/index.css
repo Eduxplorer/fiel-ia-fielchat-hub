@@ -14,8 +14,8 @@ Todas as cores em HSL seguindo as especificações do documento
     --accent: 51 100% 50%;       /* Dourado #FFD700 */
     
     /* Tons de Fundo */
-    --background: 0 0% 7%;       /* #121212 - Fundo principal */
-    --content: 0 0% 11%;         /* #1C1C1C - Cards e elementos elevados */
+    --background: 0 0% 12%;      /* #1E1E1E - Fundo principal mais claro */
+    --content: 0 0% 15%;         /* #262626 - Cards e elementos elevados */
     
     /* Neutros */
     --neutral-border: 0 0% 20%;     /* #333333 */
@@ -29,11 +29,11 @@ Todas as cores em HSL seguindo as especificações do documento
     
     /* Compatibilidade shadcn */
     --foreground: 0 0% 94%;      /* neutral-text-primary */
-    --card: 0 0% 11%;            /* content */
+    --card: 0 0% 15%;            /* content */
     --card-foreground: 0 0% 94%; /* neutral-text-primary */
-    --popover: 0 0% 11%;         /* content */
+    --popover: 0 0% 15%;         /* content */
     --popover-foreground: 0 0% 94%; /* neutral-text-primary */
-    --muted: 0 0% 15%;           /* Mais claro que content */
+    --muted: 0 0% 18%;           /* Mais claro que content */
     --muted-foreground: 0 0% 53%; /* neutral-text-secondary */
     --border: 0 0% 20%;          /* neutral-border */
     --input: 0 0% 20%;           /* neutral-border */
@@ -48,8 +48,8 @@ Todas as cores em HSL seguindo as especificações do documento
     --primary: 0 0% 0%;
     --secondary: 0 0% 100%;
     --accent: 51 100% 50%;
-    --background: 0 0% 7%;
-    --content: 0 0% 11%;
+    --background: 0 0% 12%;
+    --content: 0 0% 15%;
     --neutral-border: 0 0% 20%;
     --neutral-text-primary: 0 0% 94%;
     --neutral-text-secondary: 0 0% 53%;
@@ -57,11 +57,11 @@ Todas as cores em HSL seguindo as especificações do documento
     --warning: 45 100% 51%;
     --danger: 354 70% 54%;
     --foreground: 0 0% 94%;
-    --card: 0 0% 11%;
+    --card: 0 0% 15%;
     --card-foreground: 0 0% 94%;
-    --popover: 0 0% 11%;
+    --popover: 0 0% 15%;
     --popover-foreground: 0 0% 94%;
-    --muted: 0 0% 15%;
+    --muted: 0 0% 18%;
     --muted-foreground: 0 0% 53%;
     --border: 0 0% 20%;
     --input: 0 0% 20%;
