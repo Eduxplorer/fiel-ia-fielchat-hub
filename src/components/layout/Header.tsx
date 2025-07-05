@@ -17,7 +17,7 @@ export function Header({ className }: HeaderProps) {
           <span className="text-secondary">.IA</span>
         </div>
       </div>
-      
+
       <nav className="hidden md:flex items-center space-x-8">
         <a href="#recursos" className="text-neutral-text-secondary hover:text-accent transition-colors duration-300">
           Recursos
@@ -28,12 +28,8 @@ export function Header({ className }: HeaderProps) {
       </nav>
 
       <div className="flex items-center space-x-4">
-        <FielButton variant="ghost" asChild>
-          <a href="/login">Entrar</a>
-        </FielButton>
-        <FielButton asChild>
-          <a href="/cadastro">Começar Agora</a>
-        </FielButton>
+        <FielButton variant="ghost" asChild><a href="/login">Entrar</a></FielButton>
+        <FielButton asChild><a href="/cadastro">Começar Agora</a></FielButton>
       </div>
     </header>
   )
